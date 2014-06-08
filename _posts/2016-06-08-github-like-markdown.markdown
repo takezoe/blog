@@ -30,4 +30,4 @@ $ jekyll server --baseurl ''
 ```
 </pre>
 
-これならGithubのWebエディタや、その他のMarkdownエディタで編集する場合でもそれなりにプレビューできますね。
+これならGithubのWebエディタや、その他のMarkdownエディタで編集する場合でもちゃんとプレビューできますね。
