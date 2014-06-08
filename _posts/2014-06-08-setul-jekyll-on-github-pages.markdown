@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "はじめてのJekyll on Github Pages"
+date: 2014-06-08 11:48:00
 categories: jekyll
 ---
 ## インストール
