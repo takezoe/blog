@@ -9,22 +9,22 @@ categories: jekyll
 
 まずは`gem`コマンドでJekyllをインストール。
 
-{% highlight bash %}
+```bash
 $ gem install jekyll
-{% endhighlight %}
+```
 
 すると`jekyll`コマンドが使用できるようになるので（使用できない場合はターミナルを再起動します）、ディレクトリを作成。
 
-{% highlight bash %}
+```bash
 $ jekyll new jk
-{% endhighlight %}
+```
 
 生成されたディレクトリに移動して実際に動かしてみます。
 
-{% highlight bash %}
+```bash
 $ cd jk
 $ jekyll server
-{% endhighlight %}
+```
 
 すると4000番ポートでサーバが起動するのでブラウザからhttp://localhost:4000/にアクセスすると以下のような画面が表示されるはずです。
 
@@ -38,14 +38,14 @@ $ jekyll server
 
 今回はテスト用にhttps://github.com/takezoe/blog/というリポジトリを作成しました。Github Pagesでコンテンツを公開するには`gh-pages`というブランチにpushします。
 
-{% highlight bash %}
+```bash
 $ git init .
 $ git checkout -b gh-pages
 $ git add .
 $ git commit -m 'first commit'
 $ git remote add origin https://github.com/takezoe/blog.git
 $ git push origin gh-pages
-{% endhighlight %}
+```
 
 http://takezoe.github.io/blog/にアクセスしてみます。するとこんな感じに…。
 
@@ -53,7 +53,7 @@ http://takezoe.github.io/blog/にアクセスしてみます。するとこん�
 
 どうやら`css/main.css`が見えていないようです。デフォルトの状態だとドキュメントルートからのパスでCSSを見に行ってしまうようなので`_config.yml`の`baseurl`を変更します。
 
-{% highlight yaml %}
+```yaml
 # Site settings
 title: Your awesome title
 email: your-email@domain.com
@@ -62,14 +62,14 @@ onfig.yml. It will appear in your document head meta (for Google search results)
 ed.xml site description."
 baseurl: "http://takezoe.github.io/blog"
 url: "http://yourdomain.com"
-{% endhighlight %}
+```
 
 この状態でpushするとGithub Pages上でもきちんと表示されるようになります。
 
 しかし困ったことにこの状態だとローカルで`jekyll server`で動かすときにエラーが表示されるようになってしまいます。なので、ローカルで実行するときは
 
-{% highlight bash %}
+```bash
 $ jekyll server --baseurl ''
-{% endhighlight %}
+```
 
 のように`--baseurl`オプションを指定して起動するとよさげです。
