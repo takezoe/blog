@@ -1,7 +1,7 @@
 # Site settings
-title: My Jekyll Blog
-email: your-email@domain.com
-description: "I'm a Scala programmer, author of GitBucket, Amateras and FreeStyle Wiki, also committer of Scalatra, Apache Click and The Seasar Software Foundation. This blog is test of Jekyll on Github Pages."
+title: GitBucket News
+#email: your-email@domain.com
+description: "GitBucket is a Github clone powered by Scala."
 baseurl: "http://takezoe.github.io/blog"
 url: "http://takezoe.github.io/blog"
 
@@ -9,7 +9,7 @@ url: "http://takezoe.github.io/blog"
 #markdown: kramdown
 #permalink: prettay
 
-markdown: redcarpet 
-redcarpet: 
-    extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", 
-                 "tables", "with_toc_data"] 
+markdown: redcarpet
+redcarpet:
+    extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink",
+                 "tables", "with_toc_data"]
