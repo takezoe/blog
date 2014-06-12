@@ -1,7 +1,7 @@
 # Site settings
-title: GitBucket News
+title: My Jekyll Blog
 #email: your-email@domain.com
-description: "GitBucket is a Github clone powered by Scala."
+description: "Github PagesでJekyllを使ったブログを運用するためのテストです。Jekyllに関するネタを書き留めています。"
 baseurl: "http://takezoe.github.io/blog"
 url: "http://takezoe.github.io/blog"
 
